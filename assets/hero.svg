@@ -1,0 +1,59 @@
+<svg width="1000" height="260" viewBox="0 0 1000 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1000" y2="260" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#090A0D"/>
+      <stop offset="0.55" stop-color="#151015"/>
+      <stop offset="1" stop-color="#090A0D"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1000" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF4058" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#FF4058"/>
+      <stop offset="1" stop-color="#FF4058" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse">
+      <path d="M34 0H0V34" stroke="#FF4058" stroke-opacity=".10" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1000" height="260" rx="18" fill="url(#bg)"/>
+  <rect width="1000" height="260" rx="18" fill="url(#grid)"/>
+  <rect x="1" y="1" width="998" height="258" rx="17" stroke="#FF4058" stroke-opacity=".42" stroke-width="2"/>
+
+  <g opacity=".75" font-family="monospace" font-size="12" letter-spacing="3" fill="#FF8A99">
+    <text x="42" y="42">ARTUSHBAGRATUNYAN/DEVELOPERPROFILE</text>
+    <text x="820" y="42">[ BUILD MODE: ON ]</text>
+  </g>
+
+  <g font-family="monospace">
+    <text x="48" y="132" font-size="62" font-weight="700" letter-spacing="2" fill="#F5F5F5">CODE.</text>
+    <text x="255" y="132" font-size="62" font-weight="700" letter-spacing="2" fill="#FF4058" filter="url(#glow)">LEARN.</text>
+    <text x="515" y="132" font-size="62" font-weight="700" letter-spacing="2" fill="#F5F5F5">BUILD.</text>
+    <text x="52" y="174" font-size="16" letter-spacing="2" fill="#C3B8BC">REACT  /  PYTHON  /  DJANGO  /  JAVASCRIPT</text>
+  </g>
+
+  <path d="M48 205H952" stroke="#6E2633" stroke-width="2"/>
+  <path d="M48 205H952" stroke="url(#line)" stroke-width="3" filter="url(#glow)">
+    <animate attributeName="stroke-dasharray" values="0 904;220 684;0 904" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-dashoffset" values="0;-904" dur="4.5s" repeatCount="indefinite"/>
+  </path>
+
+  <g transform="translate(52 226)" font-family="monospace" font-size="11" fill="#FF7B8D">
+    <circle cx="4" cy="-3" r="4" fill="#FF4058">
+      <animate attributeName="opacity" values="1;.25;1" dur="1.4s" repeatCount="indefinite"/>
+    </circle>
+    <text x="18" y="1" letter-spacing="2">STATUS: BUILDING / SHIPPING / IMPROVING</text>
+  </g>
+
+  <g transform="translate(900 92)" stroke="#FF4058" stroke-width="2" opacity=".9">
+    <circle r="26" stroke-opacity=".28"/>
+    <circle r="16" stroke-opacity=".55">
+      <animate attributeName="r" values="16;23;16" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values=".8;.25;.8" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="5" fill="#FF4058" filter="url(#glow)"/>
+  </g>
+</svg>
